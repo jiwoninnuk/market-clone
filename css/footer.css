@@ -29,6 +29,23 @@ footer {
   font-size: 10px;
   font-weight: bold;
 }
+
+@keyframes icons-move {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .footer-icons__img {
   width: 50px;
+}
+
+.footer-icons:hover .footer-icons__img {
+  animation: 2s icons-move;
 }
